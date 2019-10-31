@@ -1,0 +1,35 @@
+﻿<Window x:Class="ClientX.TestHarnessWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientX"
+        mc:Ignorable="d"
+        Title="" Height="450" Width="878" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="380" Margin="412,10,0,0" VerticalAlignment="Top" Width="450"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="380" Margin="10,10,0,0" VerticalAlignment="Top" Width="380">
+            <Label Content="PATH:" HorizontalAlignment="Left" Height="25" Margin="29,24,0,0" VerticalAlignment="Top" Width="320" Name="Path"/>
+        </Border>
+        <ListBox HorizontalAlignment="Left" Height="280" Margin="40,68,0,0" VerticalAlignment="Top" Width="320" RenderTransformOrigin="0.5,0.5" Name="DirectoryList" MouseDoubleClick="DirectoryList_DoubleClick" >
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.274"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.669"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <ListBox HorizontalAlignment="Left" Height="280" Margin="440,68,0,0" VerticalAlignment="Top" Width="320" Name="FileList" SelectionChanged="FileList_SelectionChanged"/>
+        <Label Content="DIRECTORIES" HorizontalAlignment="Left" Height="25" Margin="40,5,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="FILES" HorizontalAlignment="Left" Height="25" Margin="440,5,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="New Folder" HorizontalAlignment="Left" Height="25" Margin="40,353,0,0" VerticalAlignment="Top" Width="85" Click="NewFolder_Button_Click" Name="NewFolderButton"/>
+        <Button Content="Upload files" HorizontalAlignment="Left" Height="25" Margin="280,353,0,0" VerticalAlignment="Top" Width="80" Click="UploadFiles_Button_Click" Name="UploadFilesButton"/>
+        <Button Content="Test Driver" HorizontalAlignment="Left" Height="25" Margin="440,353,0,0" VerticalAlignment="Top" Width="70" Click="TestDriver_Button_Click" Name="TestDriverButton"/>
+        <Button Content="Download" HorizontalAlignment="Left" Height="25" Margin="774,70,0,0" VerticalAlignment="Top" Width="80" Click="Download_Button_Click" Name="DownloadButton"/>
+        <Button Content="Tested Code" HorizontalAlignment="Left" Height="25" Margin="565,353,0,0" VerticalAlignment="Top" Width="74" Click="TestedCode_Button_Click" Name="TestedCodeButton"/>
+        <Button Content="Execute" HorizontalAlignment="Left" Height="25" Margin="686,353,0,0" VerticalAlignment="Top" Width="74" Click="Execute_ButtonClick" Name="ExecuteButton"/>
+        <Button Content="View" HorizontalAlignment="Left" Height="25" Margin="774,106,0,0" VerticalAlignment="Top" Width="80" Click="View_Button_Click" Name="ViewButton"/>
+    </Grid>
+</Window>

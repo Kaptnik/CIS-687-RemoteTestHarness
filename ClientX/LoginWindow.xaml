@@ -1,0 +1,27 @@
+﻿<Window x:Class="ClientX.LoginWindow"        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientX"
+        mc:Ignorable="d"
+        Title="TestHarness Client - Login" Height="450" Width="683.2" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="412*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="120*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="240" Margin="10,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="400" Grid.Column="2"/>
+        <Label Content="Username:" HorizontalAlignment="Left" Height="30" Margin="65,160,0,0" VerticalAlignment="Top" Width="80" Grid.Column="2"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Height="30" Margin="65,190,0,0" VerticalAlignment="Top" Width="80" Grid.Column="2"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="155,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Grid.Column="2" Name="Username"/>
+        <PasswordBox HorizontalAlignment="Left" Height="30" Margin="155,190,0,0" VerticalAlignment="Top" Width="115" Grid.Column="2" Name="Password" />
+        <Button Content="Login" HorizontalAlignment="Left" Height="25" Margin="161,240,0,0" VerticalAlignment="Top" Width="100" Grid.Column="2" Click="Button_Login_Click" />
+        <CheckBox Content="CheckBox" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="100,281,0,0" VerticalAlignment="Top" Width="13" Name="CheckBox_UserManagement"/>
+        <Label Content="Open user management" Grid.Column="2" HorizontalAlignment="Left" Height="32" Margin="129,275,0,0" VerticalAlignment="Top" Width="146"/>
+
+    </Grid>
+</Window>

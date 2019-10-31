@@ -1,0 +1,13 @@
+<Tests>
+  <count>1</count>
+  <item_version>0</item_version>
+  <item>
+    <TestDriver>Test.dll</TestDriver>
+    <TestedCodes>
+      <count>2</count>
+      <item_version>0</item_version>
+      <item>Vehicle.dll</item>
+      <item>Shape.dll</item>
+    </TestedCodes>
+  </item>
+</Tests>

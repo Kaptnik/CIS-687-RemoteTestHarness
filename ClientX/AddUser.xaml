@@ -1,0 +1,28 @@
+﻿<Window x:Class="ClientX.AddUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientX"
+        mc:Ignorable="d"
+        Title="Test Harness Client - Add User" Height="450" Width="494" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Full name" HorizontalAlignment="Left" Height="30" Margin="80,80,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Username" HorizontalAlignment="Left" Height="30" Margin="80,120,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="30" Margin="80,159,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Is Admin?" HorizontalAlignment="Left" Height="30" Margin="80,197,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="160,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" Name="Fullname"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="160,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" Name="Username"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="18" Margin="165,203,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="1,1.278" Name="IsAdmin"/>
+        <PasswordBox HorizontalAlignment="Left" Height="30" Margin="160,159,0,0" VerticalAlignment="Top" Width="215" Name="Password"/>
+        <Button Content="Register User" HorizontalAlignment="Left" Height="30" Margin="79,270,0,0" VerticalAlignment="Top" Width="195" Click="RegisterUser_Button_Click" Name="Button_RegisterUser"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="305" Margin="55,45,0,0" VerticalAlignment="Top" Width="350">
+            <Button Content="Cancel" HorizontalAlignment="Left" Height="30" Margin="224,224,0,0" VerticalAlignment="Top" Width="95" Click="Cancel_Button_Click"/>
+        </Border>
+
+    </Grid>
+</Window>
